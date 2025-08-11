@@ -1,29 +1,34 @@
 # TechBridge
 
-This template should help get you started developing with Vue 3 in Vite.
+**TechBridge** is a career assistance platform designed to help users assess their technical skills, identify their proficiency level, recommend targeted courses to bridge skill gaps, and provide job recommendations based on their resume.
 
-## Recommended IDE Setup
+## 🚀 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Skill Assessment**
+  - User selects a skill (e.g., Python, Java, etc.).
+  - Multi-level questions (Beginner → Intermediate → Advanced).
+  - Determines the user's proficiency level based on score.
+  
+- **Course Recommendations**
+  - Uses **TF-IDF Recommendation Algorithm** to suggest courses tailored to the user's skill level.
+  - Helps bridge the gap from current level to the next.
 
-## Customize configuration
+- **Job Recommendations**
+  - User uploads a resume (PDF/DOCX).
+  - Resume parsing with **Word-to-Word Vectorization**.
+  - Matches user profile to relevant job opportunities.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🛠️ Tech Stack
 
-```sh
-npm install
-```
+### Frontend
+- **Vue.js** — Interactive user interface for skill selection, assessment, and recommendations.
 
-### Compile and Hot-Reload for Development
+### Backend
+- **Python** — Core business logic, algorithms, and data processing.
+- **Flask** — API layer for communication between frontend and backend.
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+### Algorithms
+- **TF-IDF (Term Frequency–Inverse Document Frequency)** — For course recommendations based on user’s assessed level and skill gap.
+- **Word-to-Word Vectorization** — For parsing resumes and matching them with job requirements.
